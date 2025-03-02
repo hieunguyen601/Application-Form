@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    background-color: midnightblue;
+    padding: 10px;
+    color: yellow;
+    text-align: center;
+    font-size: large;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Libre Baskerville", serif;
+    background-color: #FFFDF7;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 30px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.upload-resume {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 10px;
+    padding: 20px;
+    gap: 10px;
+}
+
+button {
+    width: 80px;
+    font-size: 20px;
+    margin: 20px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: rgb(61, 53, 43);
+}
+
+button:active {
+    background-color: darkgoldenrod;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}

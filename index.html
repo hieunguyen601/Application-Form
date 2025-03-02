@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <h1>Application</h1>
+    </div>
+    <form action="https://formspree.io/f/xnnndalr" method="post" enctype="multipart/form-data">
+        <fieldset class="profile">
+            <legend><h1>Profile</h1></legend>
+            <label for="f-name">First Name</label>
+            <input type="text" id="f-name" name="First Name" required>
+            <label for="l-name">Last Name</label>
+            <input type="text" id="l-name" name="Last Name" required>
+            <label for="age">DOB</label>
+            <input type="date" id="age" name="DOB" required>
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email" required>
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" name="Phone Number" id="phone-number" required>
+        </fieldset>
+        <fieldset class="experience">
+            <legend><h1>Experience</h1></legend>
+            <label for="previous-job-1">Previous Job 1</label>
+            <input type="text" id="previous-job-1" name="Previous Job 1" required>
+            <label for="position-1">Position</label>
+            <input type="text" id="position-1" name="Position 1" required>
+            <label for="date-of-employment-1">Date of Employment</label>
+            <input type="date" id="date-of-employment-1" name="Date of Employment 1" required>
+            <label for="end-date">to</label>
+            <input type="date" name="End Date 1" id="end-date" required>
+            <label for="previous-job-2">Previous Job 2</label>
+            <input type="text" id="previous-job-2" name="Previous Job 2" required>
+            <label for="position-2">Position</label>
+            <input type="text" id="position-2" name="Position 2" required>
+            <label for="date-of-employment-2">Date of Employment</label>
+            <input type="date" id="date-of-employment-2" name="Date of Employment 2" required>
+            <label for="end-date-2">to</label>
+            <input type="date" name="End Date 2" id="end-date-2" required>
+        </fieldset>
+
+        <fieldset class="work">
+            <legend><h1>Work</h1></legend>
+            <label for="apply-position">Apply for position</label>
+            <select name="Position" id="apply-position" required>
+                <option value="select">Select</option>
+                <option value="cashier">Cashier</option>
+                <option value="cleaner">Cleaner</option>
+                <option value="kitchen">Kitchen</option>
+                <option value="barista">Barita</option>
+            </select>
+            <label for="salary">Expected Salary (hour)</label>
+            <input type="number" id="salary" name="Salary">
+        </fieldset>
+
+        <fieldset class="upload-resume">
+            <legend><h1>Upload Resume</h1></legend>
+            <label for="resume"></label>
+            <input type="file" name="attachment" id="resume">
+        </fieldset>
+
+        <button type="submit" class="submit">Submit</button>
+    </form>
+</body>
+</html>
